@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style.css') }}">
+    <script>
+function first(){
+    
+    if (document.querySelector('#create').style.display === 'none'){
+        document.querySelector('#create').style.display = 'block';
+    }
+    else{
+        document.querySelector('#create').style.display = 'none';
+    }
+}
+    </script>
+</head>
+<body>
+    <div id = 'master' >
+   <form action="/result" method = 'POST'>
+    <input type="text" name = 'user_id' placeholder="user_id">
+    <input type="text" name = 'password' placeholder = 'password'>
+    <input type="submit" name = 'click_here' placeholder="click_here">
+
+   </form>
+   <div id = 'create' class = 'create1' style = 'display:none'>
+    <form action="/create" method = 'POST'>
+        <input type="text" name = 'user_id' placeholder="user_id">
+        <input type="text" name = 'password' placeholder="password">
+        <input type="submit" name="submit_here" placeholder = 'submit_here'>
+    </form>
+
+    </button>
+   </div>
+</div>
+<button onclick="first()" >click me..</button>
+</body>
+</html>

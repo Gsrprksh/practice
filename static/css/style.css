@@ -1,0 +1,17 @@
+.master{
+    display: none;
+}
+body{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.create1 {
+    width: 30%;
+    height: 40%;
+    border-radius: 3px;
+    color: aqua;
+    position: relative;
+
+}
